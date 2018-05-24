@@ -15,8 +15,9 @@ $(document).ready(function (e){
 		 },false);//resumen
 	 document.addEventListener("online",function(){
 		 escribehistoria('la app se conecto a la red');
-		 },false);//conecto
-	 document.addEventListener("offline",function(){
+		 },false);//conecto	 
+		document.addEventListener("offline",function()
+		{
 		 escribehistoria('la app se desconecto a la red');
 	 },false);//se desconecto
 	 
@@ -25,9 +26,8 @@ $(document).ready(function (e){
 	
 	
 });//document
-
 function escribehistoria(accion){
-	$('#eHistoria').append('<li>'+accion+'</li>');
+$('#eHistoria').append('<li>'+accion+'</li>');
 }
 
 		 
